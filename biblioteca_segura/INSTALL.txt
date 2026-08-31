@@ -1,0 +1,23 @@
+Biblioteca Municipal - versão corrigida (segura)
+================================================
+
+Requisitos: PHP 7+ e MySQL/MariaDB (XAMPP, WAMP, Laragon ou LAMP).
+
+1. Copie a pasta para o diretório do servidor (htdocs no XAMPP).
+
+2. Importe o banco:
+   - phpMyAdmin > Importar > db.sql
+   - ou: mysql -u root < db.sql
+
+3. Crie os usuários iniciais (com senha em hash):
+   - Acesse no navegador: http://localhost/<pasta>/setup.php
+   - Depois APAGUE o arquivo setup.php.
+
+4. Acesse o site: http://localhost/<pasta>/
+
+Login inicial:
+   usuário: admin
+   senha:   admin123
+   (a senha só é usada no login; no banco fica guardada como hash)
+
+Observação: em produção, use HTTPS e mude 'secure' => true no config.php.
